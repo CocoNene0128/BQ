@@ -45,10 +45,16 @@ function App() {
             <Layout/>
             <Routes>
                 {/* 로그인 페이지 */}
-                <Route path="/login" element={user ? <Navigate to="/items" replace/> : <Login/>}/>
+                {/* <Route path="/login" element={user ? <Navigate to="/items" replace/> : <Login/>}/> */}
 
                 {/* 루트 경로 */}
-                <Route path="*" element={user ? <Navigate to="/items" replace/> : <Navigate to="/login" replace/>}/>
+                {/* <Route path="*" element={user ? <Navigate to="/items" replace/> : <Navigate to="/login" replace/>}/> */}
+
+                {/* 시연용 */}
+                <Route path="/login" element={<Login />} />
+
+                {/* 시연용 */}
+                <Route path="*" element={<Navigate to="/items" replace />} />
 
                 {/* 회원 관련 페이지 */}
                 <Route path="/me" element={<PrivateRoute><MyPage/></PrivateRoute>}/>
