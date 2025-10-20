@@ -18,8 +18,10 @@ import { create } from "zustand/react";
 const useUserStore = create((set) => ({
   user: {
     id: 0,
-    name: "Demo User",
-    roleId: 3,       // 관리자 권한 (화면 전부 접근 가능)
+    empCode: "A001",
+    empName: "Demo Admin",
+    roleId: "3",
+    roleName: "ADMIN",
     dept: "IT팀",
     position: "Manager",
   },
