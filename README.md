@@ -43,8 +43,9 @@
 
 ---
 
-## 🧱 ERD
+## DB 설계 (ERD)
 ![System Architecture](./images/bq_erd.png)
+
 
 ---
 
