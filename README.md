@@ -1,26 +1,67 @@
-# BQ System
-사무 비품 재고 관리 시스템 (Spring Boot · React · Android)
+# 🎯 BQ System
+비품 재고를 효율적으로 관리하기 위한 통합 시스템입니다.  
+하나의 프로젝트 안에서 **웹(React)** 과 **모바일(Android)** 을 모두 개발하고  
+**Spring Boot 백엔드**로 전체 데이터를 관리했습니다.
 
-## 프로젝트 개요
-Spring Boot, React, Android를 연동한 Full-stack 비품 관리 시스템입니다.  
-비품 등록, 재고 조회, 최소 재고 알림, 발주 요청 등 사무 비품의 전반적인 관리 기능을 제공합니다.  
-모바일에서는 QR 코드를 이용해 입출고를 처리할 수 있습니다.
+---
 
-## 주요 기능
-- ✅ 비품 등록 / 수정 / 삭제 / 검색  
-- ✅ QR 코드 기반 재고 입출고 처리  
-- ✅ 최소 재고 자동 감지 및 발주 요청  
-- ✅ 관리자 / 사용자 권한 구분  
-- ✅ 웹·모바일 간 데이터 연동  
+## 💡 프로젝트 개요
+기존 오프라인으로 이루어지던 비품 관리 과정을 디지털화하기 위해 시작된 프로젝트입니다.  
+비품의 등록부터 입출고, 최소 재고 감지, 발주 요청까지 한 흐름으로 처리할 수 있도록 설계했습니다.  
+특히 **QR 코드 기반 입출고 기능**과 **웹–앱 간 데이터 연동 구조**를 직접 구현했습니다.
 
-## 기술 스택
-- **Back-end** : Java 17, Spring Boot, JPA, MySQL  
-- **Front-end** : React(Vite), Zustand, AG-Grid  
-- **Android** : Kotlin, Retrofit2, ZXing(QR)  
-- **Tools** : GitHub, SourceTree  
+---
 
-## 담당 역할
-- Back-end & Web & Android Integration  
-- API 설계 및 데이터베이스 모델링  
-- React UI 연동 및 Android 데이터 통신 처리  
-- 웹·모바일 연동 테스트 및 통합 검증
+## ⚡ 개발 기간
+2025.09 ~ 2025.10 (약 2개월)
+
+---
+
+## 🛠 기술 스택
+- **Back-end** : Java 17 / Spring Boot / JPA / MySQL  
+- **Front-end** : React (Vite) / Zustand / AG-Grid  
+- **Android** : Kotlin / Retrofit2 / ZXing (QR)  
+- **Tools** : IntelliJ / Android Studio / VS Code / GitHub / SourceTree  
+
+---
+
+## 🧩 담당 역할
+- **Back-end & Web & Android Integration**  
+  - Spring Boot 기반 API 설계 및 데이터베이스 모델링  
+  - React 관리자 페이지 구현 및 프론트–서버 데이터 연동  
+  - Android 연동 및 입출고 처리 로직 개발  
+  - ERD 설계, 공통 응답 구조 정리, API 명세 문서화  
+
+---
+
+## 🎨 주요 기능
+- 비품 등록 / 수정 / 삭제 / 검색  
+- 최소 재고 자동 감지 및 발주 요청  
+- QR 코드 기반 입출고 처리  
+- 권한별 접근 제어 (관리자 / 사용자)  
+- 웹과 앱 간 데이터 실시간 동기화  
+
+---
+
+## 🧱 시스템 구조
+![System Architecture](./images/bq_erd.png)
+
+---
+
+## 💭 프로젝트를 통해 배운 점
+이전 프로젝트에서의 백엔드 경험을 기반으로  
+이번에는 **웹과 앱을 모두 연결하는 구조 설계**를 처음부터 끝까지 맡았습니다.  
+단순히 API를 만드는 수준을 넘어,  
+서버–클라이언트 간 데이터 흐름과 트랜잭션의 연관성을 고려한 개발을 진행했습니다.  
+특히 **QR 코드 입출고 처리 로직**을 구현하면서  
+REST API 설계, 예외 처리, DB 트랜잭션 관리의 중요성을 몸으로 배웠습니다.
+
+---
+
+## 👥 팀 구성
+4인 팀 프로젝트  
+- 조규철 : 백엔드 개발, 프론트엔드 개발(웹), 통합 테스트
+- 송해람(팀장) : 프론트앤드 개발 (웹,앱)
+- 김태준 : 프론트엔드 개발 총괄 (웹,앱)
+- 안현민 : 백엔드 개발 총괄, 프론트엔드 개발 (웹)
+ 
