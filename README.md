@@ -43,7 +43,7 @@
 
 ---
 
-## 🧱 시스템 구조
+## 🧱 ERD
 ![System Architecture](./images/bq_erd.png)
 
 ---
